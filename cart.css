@@ -1,0 +1,137 @@
+/* ==============================
+   Cart Page Styles
+   ============================== */
+
+.cart-container {
+    padding: 40px var(--site-padding) 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-container h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.cart-table th {
+    text-align: left;
+    padding: 14px 10px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-table td {
+    padding: 18px 10px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+/* product column */
+.cart-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-product img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    background-color: var(--light-gray);
+}
+
+/* remove link */
+.cart-remove {
+    color: var(--accent-red);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* total section */
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+/* checkout / login notice */
+.cart-actions {
+    margin-top: 20px;
+}
+
+.cart-actions a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+.cart-actions a:hover {
+    opacity: 0.85;
+}
+
+.cart-actions p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-red);
+}
+
+/* empty cart */
+.cart-empty {
+    padding: 60px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .cart-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cart-table thead {
+        display: none;
+    }
+
+    .cart-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .cart-table td {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: none;
+        padding: 10px 0;
+    }
+
+    .cart-product {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
